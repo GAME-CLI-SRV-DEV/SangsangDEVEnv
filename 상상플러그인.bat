@@ -1,4 +1,5 @@
 echo off
+chcp 65001
 echo 상상플러그인 - 상상 전용 플러그인 개발 환경
 echo.
 echo 상상을 복제, 플러그인을 Jarfile로 만들어
