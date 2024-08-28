@@ -7,6 +7,9 @@ echo "이 빌드에서 나온 결과물인 Sangsang-Paperclip-1.20.6-R0.1-SNAPSH
 실행버킷="https://github.com/GAME-CLI-SRV-DEV/Sangsang"
 버킷폴더="Sangsang"
 
+echo "실행버킷: $실행버킷"
+echo "버킷폴더: $버킷폴더"
+
 git clone $실행버킷 $버킷폴더
 cd $버킷폴더
 ./gradlew applypatches && ./gradlew createreobfPaperclipjar
