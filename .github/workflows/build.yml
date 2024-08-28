@@ -23,13 +23,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v4
+    
     - name: 상상서버 준비
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'
-        run: |
-          echo 상상액션: Bash 프로그램 활성화 중...,
-          chmod +x sangsang.sh
-          ./sangsang.sh
+        distribution: 'temurin' 
 
+    - name: Run build script
+      run: |
+        echo "상상액션: Bash 프로그램 활성화 중..."
+        chmod +x sangsang.sh
+        ./sangsang.sh
